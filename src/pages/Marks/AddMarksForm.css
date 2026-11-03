@@ -1,0 +1,172 @@
+/* Outer Layout Container */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+
+/* Main Content Area */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* Top Navigation Bar */
+.top-navbar {
+  height: 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.admin-badge {
+  font-size: 14px;
+  background-color: #f1f5f9;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Form Content Area Wrapper */
+.form-content-area {
+  padding: 30px;
+  overflow-y: auto;
+}
+
+/* Form Container Card */
+.marks-form-container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.marks-form-container h2 {
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+/* Grade & Input Selector Grid */
+.grade-selector-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.grade-selector-group label {
+  display: block;
+  font-size: 14px;
+  color: #475569;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.grade-selector-group input, 
+.grade-selector-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+  background-color: #fff;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Subject Section Titles */
+.subject-section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #334155;
+  margin: 20px 0 10px 0;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 5px;
+}
+
+/* Marks Data Table */
+.marks-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.marks-table th, 
+.marks-table td {
+  border: 1px solid #e2e8f0;
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.marks-table th {
+  background-color: #f8fafc;
+  color: #475569;
+  font-weight: 600;
+}
+
+.marks-input {
+  width: 100px;
+  padding: 6px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Basket Subjects Grid */
+.basket-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.basket-box {
+  background: #f8fafc;
+  padding: 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+}
+
+.basket-box label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  color: #475569;
+  margin-bottom: 6px;
+}
+
+.basket-box select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+/* Submit Button */
+.save-marks-btn {
+  margin-top: 20px;
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.save-marks-btn:hover {
+  background-color: #1d4ed8;
+}
+
